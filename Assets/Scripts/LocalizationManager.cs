@@ -15,4 +15,10 @@ public class LocalizationManager : MonoBehaviour
         string language = "Eng";
         PlayerPrefs.SetString("Language", language);
     }
+
+    public void Lat()
+    {
+        string language = "Lat";
+        PlayerPrefs.SetString("Language", language);
+    }
 }

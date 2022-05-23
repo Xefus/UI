@@ -10,6 +10,7 @@ public class TextLanguage : MonoBehaviour
 
     public string textRu;
     public string textEng;
+    public string textLat;
 
     void Start()
     {
@@ -18,7 +19,7 @@ public class TextLanguage : MonoBehaviour
 
     void Update()
     {
-        language = PlayerPrefs.GetString("language");
+        language = PlayerPrefs.GetString("Language");
 
         if(language == "" || language == "Eng")
         {
@@ -27,6 +28,10 @@ public class TextLanguage : MonoBehaviour
         else if(language == "Ru")
         {
             text.text = textRu;
+        }
+        else if(language == "Lat")
+        {
+            text.text = textLat;
         }
     }
 }
